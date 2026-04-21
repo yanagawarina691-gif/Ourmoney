@@ -1,0 +1,49 @@
+{
+  "name": "ourmoney",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OurMoney 微信小程序（Taro）",
+  "scripts": {
+    "build:weapp": "node scripts/run-taro.cjs build --type weapp && node -e \"require('fs').copyFileSync('dist/app.json','app.json')\"",
+    "dev:weapp": "node scripts/run-taro.cjs build --type weapp --watch",
+    "weapp:link": "node scripts/weapp-link-root.js"
+  },
+  "browserslist": [
+    "defaults and fully supports es6-module",
+    "maintained node versions"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.24.4",
+    "@supabase/supabase-js": "^2.101.0",
+    "@tarojs/components": "4.0.9",
+    "@tarojs/helper": "4.0.9",
+    "@tarojs/plugin-framework-react": "4.0.9",
+    "@tarojs/plugin-platform-weapp": "4.0.9",
+    "@tarojs/react": "4.0.9",
+    "@tarojs/runtime": "4.0.9",
+    "@tarojs/shared": "4.0.9",
+    "@tarojs/taro": "4.0.9",
+    "date-fns": "^4.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-proposal-class-properties": "7.14.5",
+    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
+    "@tarojs/cli": "4.0.9",
+    "@tarojs/taro-loader": "4.0.9",
+    "@tarojs/webpack5-runner": "4.0.9",
+    "@types/react": "^18.3.0",
+    "@types/webpack-env": "^1.18.0",
+    "babel-preset-taro": "4.0.9",
+    "postcss": "^8.4.38",
+    "react-refresh": "^0.14.0",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "typescript": "^5.4.5",
+    "webpack": "5.91.0"
+  }
+}
